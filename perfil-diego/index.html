@@ -2,30 +2,67 @@
 <!--Nombre: Diego Guerrero-->
 <!--Asignatura: Programación y diseño de aplicaciones web-->
 <!--Actividad 1: Crear una aplicación de mi perfil personal-->
+
 <html lang="es">
-<!--La etiqueta DOCTYPE html indica el tipo de documento y SIEMPRE va-->
-<!--la etiqueta de html da por inicio el documento completo-->
+
+<!--
+La etiqueta DOCTYPE html indica el tipo de documento y SIEMPRE va primero.
+La etiqueta html da inicio al documento completo.
+-->
+
 <head>
-    <!--En la etiqueta del head se incluye el título de la página, los metadatos y los enlaces externos como el css, estilos y apis de letras, iconos y demás-->
-<title> TechIY | Diego Guerrero finanzas</title>
- <!--La etiqueta title es el título de como se muestra en el navegador-->
- </head> <!--Aqui termina y se cierra el head-->
 
- <!--Aqui INICIA EL BODY-->
- <body>
- <!--La etiqueta div es para crear una división en la página-->   
- <div class=""card">
-    <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3p3nRFQQ65qnhBoC9EXaLO973swyxNVp1g4dvgmCsoA&s=10" width=""200" height="100"
-         <h1> Diego Guerrero</h1>
-    
-    
-       </div>
+    <!--
+    En la etiqueta head se incluye el título de la página,
+    los metadatos y los enlaces externos como el CSS.
+    -->
 
+    <meta charset="UTF-8">
+    <meta name="description" content="Perfil profesional de Diego Guerrero">
+    <meta name="keywords" content="Finanzas, Administración, Contabilidad">
+    <meta name="author" content="Diego Guerrero">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style.css">
 
+    <title>Finanzas | Diego Guerrero Finanzas</title>
 
+</head>
 
+<!-- Aquí inicia el BODY -->
 
-</body> <!--Aqui termina y se cierra el body->
+<body>
 
+    <!-- La etiqueta div sirve para crear una división en la página -->
+
+    <main class="card">
+
+        <div class="cover">
+
+            <img src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D">
+
+        </div>
+
+        <!-- SECCIÓN DEL PERFIL -->
+
+        <section class="profile">
+
+            <div class="profile-image">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3p3nRFQQ65qnhBoC9EXaLO973swyxNVp1g4dvgmCsoA&s=10"
+                     width="200"
+                     height="100">
+
+            </div>
+
+            <h1>Diego Guerrero</h1>
+
+            <h2>Especialista en Finanzas</h2>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
