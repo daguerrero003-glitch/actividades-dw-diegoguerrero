@@ -69,31 +69,121 @@ La etiqueta html da inicio al documento completo.
                 <div class="social-links">
 
                  <!-- Instagram -->
-                 <a href="#" target="_blank" aria-label="Instagram">
+                 <a href="https://www.instagram.com/?hl=es" target="_blank" aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                  </a>
 
                 <!-- LinkedIn -->
-                <a href="#" target="_blank" aria-label="LinkedIn">
+                <a href="https://mx.linkedin.com" target="_blank" aria-label="LinkedIn">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
 
                 <!-- GitHub -->
-                <a href="#" target="_blank" aria-label="GitHub">
+                <a href="https://github.com/daguerrero003-glitch" target="_blank" aria-label="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
 
            <!-- TikTok -->
-<a href="#" target="_blank" aria-label="TikTok">
+<a href="https://www.tiktok.com/es/" target="_blank" aria-label="TikTok">
     <i class="fa-brands fa-tiktok"></i>
 </a>
 
             </div>
 
-        </section>
+       <!--NAVEGACION PRINCIPAL DE LA TARJETA-->   
+       
+       <nav class="tabs">
+                <button class="tab active" data-section="about">
+                    Sobre mí
+                </button>
 
-    </main>
+                <button class="tab" data-section="experience">
+                    Experiencia
+                </button>
 
-</body>
+                <button class="tab" data-section="projects">
+                    Proyectos
+                </button>
+
+                <button class="tab" data-section="contact">
+                    Contacto
+                </button>
+
+            </nav>
+
+
+    <!--Contenido de las secciones: Sobre mí, experiencia, proyectos, contacto-->
+
+    <div class="content">
+ <!--Sección "sobre mi"-->
+  <section id="about" class="tab-content active">
+
+                    <h3>Sobre mí</h3>
+
+                    <p>
+                         Conocimiento en mercados bursatiles,
+                        toma de desiciones con fundamento e inversiones temporales.
+                    </p>
+
+                    <p>
+                        Trabajo en equipo, responsable
+                    </p>
+
+                    <div class="skills">
+
+                        <span>IA</span>
+                        <span>Inversiones</span>
+                        <span>Finanzas</span>
+                        <span>Excel</span>
+                        
+
+                    </div>
+
+                </section>
+    <!--Sección experiencia-->
+    <section id="experience" class="tab-content">
+
+        <h3>Experiencia</h3>
+
+     <div class="experience-item">
+
+        <span class="experience-date">
+        Educación
+        </span>
+
+     <h4>Manejo de capital</h4>
+
+     <p>
+     Asesor financiero de manejo de capital dependiendo la situación de la persona o empresa
+     </p>
+
+     </div>
+
+
+     <div class="experience-item">
+
+     <span class="experience-date">
+     Capital
+     </span>
+
+     <h4>Manejo de emprendimientos</h4>
+
+     <p>
+     Desarrollo de negocios desde cero, estrategias y soluciones
+     </p>
+
+     </div>
+
+     </section>
+
+
+     </div>
+          
+    
+     </section>
+</main>
+   <!--Enlace para el javascript, quien da interacción a la tarjeta-->
+<script src="script.js"></script>
+  </body>
 
 </html>
