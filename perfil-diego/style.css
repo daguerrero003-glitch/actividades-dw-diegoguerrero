@@ -1,3 +1,7 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+   ========================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,20 +19,29 @@ body {
     color: #252525;
 }
 
+
+/* ==========================================
+   TARJETA PRINCIPAL
+   ========================================== */
+
 .card {
     width: 100%;
     max-width: 850px;
     background: #ffffff;
     border-radius: 25px;
     overflow: hidden;
+
     box-shadow:
         0 20px 50px rgba(0, 0, 0, 0.12);
+
     animation: cardAppear 0.7s ease;
 }
+
 
 /* Animación de entrada */
 
 @keyframes cardAppear {
+
     from {
         opacity: 0;
         transform: translateY(25px);
@@ -38,7 +51,13 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
+
+
+/* ==========================================
+   PORTADA
+   ========================================== */
 
 .cover {
     width: 100%;
@@ -52,6 +71,7 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+
     transition: transform 0.6s ease;
 }
 
@@ -59,7 +79,10 @@ body {
     transform: scale(1.04);
 }
 
-/* Sección del perfil */
+
+/* ==========================================
+   SECCIÓN DEL PERFIL
+   ========================================== */
 
 .profile {
     position: relative;
@@ -67,17 +90,25 @@ body {
     text-align: center;
 }
 
-/* Imagen de perfil circular */
+
+/* ==========================================
+   IMAGEN DE PERFIL
+   ========================================== */
 
 .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
+
     border: 6px solid #ffffff;
+
     margin: -75px auto 20px;
+
     position: relative;
+
     background: #ffffff;
+
     box-shadow:
         0 8px 25px rgba(0, 0, 0, 0.15);
 }
@@ -88,6 +119,11 @@ body {
     object-fit: cover;
     display: block;
 }
+
+
+/* ==========================================
+   INFORMACIÓN PERSONAL
+   ========================================== */
 
 .profile h1 {
     font-size: 30px;
@@ -111,7 +147,10 @@ body {
     font-size: 14px;
 }
 
-/* REDES SOCIALES */
+
+/* ==========================================
+   REDES SOCIALES
+   ========================================== */
 
 .social-links {
     display: flex;
@@ -123,13 +162,18 @@ body {
 .social-links a {
     width: 42px;
     height: 42px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     border-radius: 50%;
+
     text-decoration: none;
+
     background: #0713f8;
     color: #3cb0d3;
+
     transition:
         transform 0.3s ease,
         background 0.3s ease,
@@ -142,34 +186,48 @@ body {
     color: #ffffff;
 }
 
+
+/* ==========================================
+   NAVEGACIÓN
+   ========================================== */
+
 .tabs {
     display: flex;
     justify-content: center;
     gap: 10px;
+
     border-bottom: 1px solid #e7e7e7;
+
     margin-bottom: 30px;
+
     overflow-x: auto;
 }
-
 
 .tab {
     border: none;
     background: transparent;
+
     padding: 15px 18px;
+
     font-family: inherit;
     font-size: 14px;
     font-weight: 500;
+
     color: #888;
+
     cursor: pointer;
+
     position: relative;
+
     white-space: nowrap;
+
     transition: color 0.3s ease;
 }
-
 
 .tab:hover {
     color: #222;
 }
+
 
 /* Pestaña activa */
 
@@ -183,21 +241,34 @@ body {
 
 .tab.active::after {
     content: "";
+
     position: absolute;
+
     bottom: -1px;
     left: 15%;
+
     width: 70%;
     height: 3px;
+
     background: #222;
+
     border-radius: 5px;
 }
+
+
+/* ==========================================
+   CONTENIDO
+   ========================================== */
 
 .content {
     min-height: 280px;
     text-align: left;
 }
 
-/*SECCIONES*/
+
+/* ==========================================
+   SECCIONES
+   ========================================== */
 
 .tab-content {
     display: none;
@@ -207,6 +278,7 @@ body {
 .tab-content.active {
     display: block;
 }
+
 
 @keyframes contentAppear {
 
@@ -222,14 +294,21 @@ body {
 
 }
 
-/* Títulos */
+
+/* ==========================================
+   TÍTULOS
+   ========================================== */
 
 .tab-content h3 {
     font-size: 22px;
     margin-bottom: 18px;
     color: #0f2fff;
 }
-/* Párrafos */
+
+
+/* ==========================================
+   PÁRRAFOS
+   ========================================== */
 
 .tab-content p {
     font-size: 14px;
@@ -237,6 +316,11 @@ body {
     color: #666;
     margin-bottom: 15px;
 }
+
+
+/* ==========================================
+   HABILIDADES
+   ========================================== */
 
 .skills {
     display: flex;
@@ -247,31 +331,288 @@ body {
 
 .skills span {
     background: #f1f2f4;
+
     padding: 7px 13px;
+
     border-radius: 20px;
+
     font-size: 12px;
+
     color: #555;
 }
 
-/*Experiencia laboral*/
+
+/* ==========================================
+   EXPERIENCIA LABORAL
+   ========================================== */
+
 .experience-item {
     border-left: 3px solid #222;
+
     padding-left: 20px;
+
     margin-bottom: 25px;
 }
-
 
 .experience-date {
     font-size: 12px;
     font-weight: 600;
+
     color: #888;
+
     text-transform: uppercase;
+
     letter-spacing: 1px;
 }
 
-
 .experience-item h4 {
     font-size: 16px;
+
     margin: 5px 0 8px;
+
     color: #222;
+}
+
+
+/* ==========================================
+   PROYECTOS
+   ========================================== */
+
+.projects-intro {
+    margin-bottom: 25px;
+}
+
+
+/* Tarjeta de cada proyecto */
+
+.project {
+    display: flex;
+
+    gap: 18px;
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 15px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Efecto al pasar el mouse */
+
+.project:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Icono del proyecto */
+
+.project-icon {
+    width: 50px;
+    height: 50px;
+
+    min-width: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+
+    background: #f1f2f4;
+
+    font-size: 20px;
+}
+
+
+/* Información del proyecto */
+
+.project-info {
+    flex: 1;
+}
+
+
+/* Título del proyecto */
+
+.project-info h4 {
+    font-size: 15px;
+
+    margin-bottom: 5px;
+
+    color: #222;
+}
+
+
+/* Descripción del proyecto */
+
+.project-info p {
+    margin-bottom: 8px;
+
+    font-size: 13px;
+}
+
+
+/* Enlace del proyecto */
+
+.project-info a {
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* Efecto del enlace */
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   CONTACTO
+   ========================================== */
+
+.contact-info {
+    margin-top: 20px;
+}
+
+
+/* Información básica */
+
+.contact-info p {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.contact-info i {
+    color: #0f2fff;
+
+    width: 20px;
+}
+
+
+/* ==========================================
+   ENLACES DE CONTACTO
+   ========================================== */
+
+.contact-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+/* Enlaces individuales */
+
+.contact-links a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: #f6f6f6;
+
+    text-decoration: none;
+
+    color: #333;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Efecto al pasar el mouse */
+
+.contact-links a:hover {
+    background: #eeeeee;
+
+    transform: translateX(5px);
+}
+
+
+/* Iconos de contacto */
+
+.contact-links i {
+    width: 25px;
+
+    text-align: center;
+}
+
+
+/* ==========================================
+   DISEÑO PARA CELULARES
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+
+    .profile {
+        padding: 0 20px 30px;
+    }
+
+
+    .cover {
+        height: 180px;
+    }
+
+
+    .profile h1 {
+        font-size: 25px;
+    }
+
+
+    .tabs {
+        justify-content: flex-start;
+    }
+
+
+    .tab {
+        padding: 12px 14px;
+    }
+
+
+    .project {
+        gap: 12px;
+        padding: 15px;
+    }
+
+
+    .project-icon {
+        width: 45px;
+        height: 45px;
+
+        min-width: 45px;
+    }
+
 }

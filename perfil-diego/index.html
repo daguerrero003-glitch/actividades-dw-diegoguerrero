@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<!--Nombre: Diego Guerrero-->
-<!--Asignatura: Programación y diseño de aplicaciones web-->
-<!--Actividad 1: Crear una aplicación de mi perfil personal-->
+<!-- Nombre: Diego Guerrero -->
+<!-- Asignatura: Programación y diseño de aplicaciones web -->
+<!-- Actividad 1: Crear una aplicación de mi perfil personal -->
 
 <html lang="es">
 
-<!--
-La etiqueta DOCTYPE html indica el tipo de documento y SIEMPRE va primero.
-La etiqueta html da inicio al documento completo.
--->
-
 <head>
 
-    <!--
-    En la etiqueta head se incluye el título de la página,
-    los metadatos y los enlaces externos como el CSS.
-    -->
-
     <meta charset="UTF-8">
+
     <meta name="description" content="Perfil profesional de Diego Guerrero">
+
     <meta name="keywords" content="Finanzas, Administración, Contabilidad">
+
     <meta name="author" content="Diego Guerrero">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Archivo CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -32,158 +28,446 @@ La etiqueta html da inicio al documento completo.
 
 </head>
 
-<!-- Aquí inicia el BODY -->
-
 <body>
 
-    <!-- La etiqueta div sirve para crear una división en la página -->
+    <!-- TARJETA PRINCIPAL -->
 
     <main class="card">
 
+
+        <!-- PORTADA -->
+
         <div class="cover">
 
-            <img src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D">
+            <img
+                src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=900&auto=format&fit=crop&q=60"
+                alt="Imagen relacionada con finanzas">
 
         </div>
+
 
         <!-- SECCIÓN DEL PERFIL -->
 
         <section class="profile">
 
+
+            <!-- IMAGEN DE PERFIL -->
+
             <div class="profile-image">
 
-                <img src="IMG_9296.jpg"
-                     width="200"
-                     height="100">
+                <img
+                    src="IMG_9296.jpg"
+                    width="200"
+                    height="200"
+                    alt="Foto de Diego Guerrero">
 
             </div>
+
+
+            <!-- INFORMACIÓN PERSONAL -->
 
             <h1>Diego Guerrero</h1>
+
             <h2>Especialista en Finanzas</h2>
+
             <p class="profile-description">
-                Licenciado en finanzas, Especializado en mercados financieros y corporativos
+                Licenciado en Finanzas, especializado en mercados financieros
+                y corporativos.
             </p>
 
-    <!--REDES SOCIALES-->
 
-                <div class="social-links">
+            <!-- REDES SOCIALES -->
 
-                 <!-- Instagram -->
-                 <a href="https://www.instagram.com/?hl=es" target="_blank" aria-label="Instagram">
+            <div class="social-links">
+
+
+                <!-- Instagram -->
+
+                <a
+                    href="https://www.instagram.com/?hl=es"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram">
+
                     <i class="fa-brands fa-instagram"></i>
-                 </a>
+
+                </a>
+
 
                 <!-- LinkedIn -->
-                <a href="https://mx.linkedin.com" target="_blank" aria-label="LinkedIn">
+
+                <a
+                    href="https://mx.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+
                     <i class="fa-brands fa-linkedin-in"></i>
+
                 </a>
+
 
                 <!-- GitHub -->
-                <a href="https://github.com/daguerrero003-glitch" target="_blank" aria-label="GitHub">
+
+                <a
+                    href="https://github.com/daguerrero003-glitch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
                     <i class="fa-brands fa-github"></i>
+
                 </a>
 
-           <!-- TikTok -->
-<a href="https://www.tiktok.com/es/" target="_blank" aria-label="TikTok">
-    <i class="fa-brands fa-tiktok"></i>
-</a>
+
+                <!-- TikTok -->
+
+                <a
+                    href="https://www.tiktok.com/es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok">
+
+                    <i class="fa-brands fa-tiktok"></i>
+
+                </a>
+
 
             </div>
 
-       <!--NAVEGACION PRINCIPAL DE LA TARJETA-->   
-       
-       <nav class="tabs">
-                <button class="tab active" data-section="about">
+
+            <!-- NAVEGACIÓN PRINCIPAL -->
+
+            <nav class="tabs">
+
+
+                <button
+                    class="tab active"
+                    data-section="about">
+
                     Sobre mí
+
                 </button>
 
-                <button class="tab" data-section="experience">
+
+                <button
+                    class="tab"
+                    data-section="experience">
+
                     Experiencia
+
                 </button>
 
-                <button class="tab" data-section="projects">
+
+                <button
+                    class="tab"
+                    data-section="projects">
+
                     Proyectos
+
                 </button>
 
-                <button class="tab" data-section="contact">
+
+                <button
+                    class="tab"
+                    data-section="contact">
+
                     Contacto
+
                 </button>
+
 
             </nav>
 
 
-    <!--Contenido de las secciones: Sobre mí, experiencia, proyectos, contacto-->
+            <!-- CONTENIDO DE LAS SECCIONES -->
 
-    <div class="content">
- <!--Sección "sobre mi"-->
-  <section id="about" class="tab-content active">
+            <div class="content">
+
+
+                <!-- ============================== -->
+                <!-- SECCIÓN SOBRE MÍ -->
+                <!-- ============================== -->
+
+                <section
+                    id="about"
+                    class="tab-content active">
+
 
                     <h3>Sobre mí</h3>
 
-                    <p>
-                         Conocimiento en mercados bursatiles,
-                        toma de desiciones con fundamento e inversiones temporales.
-                    </p>
 
                     <p>
-                        Trabajo en equipo, responsable
+                        Conocimiento en mercados bursátiles, toma de decisiones
+                        con fundamento e inversiones temporales.
                     </p>
+
+
+                    <p>
+                        Trabajo en equipo y responsable, con interés en el
+                        desarrollo financiero y empresarial.
+                    </p>
+
+
+                    <!-- HABILIDADES -->
 
                     <div class="skills">
 
                         <span>IA</span>
+
                         <span>Inversiones</span>
+
                         <span>Finanzas</span>
+
                         <span>Excel</span>
-                        
 
                     </div>
 
+
                 </section>
-    <!--Sección experiencia-->
-    <section id="experience" class="tab-content">
-
-        <h3>Experiencia</h3>
-
-     <div class="experience-item">
-
-        <span class="experience-date">
-        Educación
-        </span>
-
-     <h4>Manejo de capital</h4>
-
-     <p>
-     Asesor financiero de manejo de capital dependiendo la situación de la persona o empresa
-     </p>
-
-     </div>
 
 
-     <div class="experience-item">
+                <!-- ============================== -->
+                <!-- SECCIÓN EXPERIENCIA -->
+                <!-- ============================== -->
 
-     <span class="experience-date">
-     Capital
-     </span>
-
-     <h4>Manejo de emprendimientos</h4>
-
-     <p>
-     Desarrollo de negocios desde cero, estrategias y soluciones
-     </p>
-
-     </div>
-
-     </section>
+                <section
+                    id="experience"
+                    class="tab-content">
 
 
-     </div>
-          
-    
-     </section>
-</main>
-   <!--Enlace para el javascript, quien da interacción a la tarjeta-->
-<script src="script.js"></script>
-  </body>
+                    <h3>Experiencia</h3>
+
+
+                    <!-- EXPERIENCIA 1 -->
+
+                    <div class="experience-item">
+
+
+                        <span class="experience-date">
+                            Portafolio
+                        </span>
+
+
+                        <h4>Manejo de capital</h4>
+
+
+                        <p>
+                            Asesor en creación de portafolios de inversión dependiendo el riesgo y situación de cada persona
+                        </p>
+
+
+                    </div>
+
+
+                    <!-- EXPERIENCIA 2 -->
+
+                    <div class="experience-item">
+
+
+                        <span class="experience-date">
+                            Capital
+                        </span>
+
+
+                        <h4>Manejo de emprendimientos</h4>
+
+
+                        <p>
+                            Desarrollo de negocios desde cero, estrategias
+                            y soluciones.
+                        </p>
+
+
+                    </div>
+
+<!-- EXPERIENCIA 3 -->
+
+<div class="experience-item">
+
+    <span class="experience-date">
+        Finanzas empresariales
+    </span>
+
+    <h4>Análisis financiero de empresas</h4>
+
+    <p>
+        Evaluación de la situación financiera de empresas mediante
+        el análisis de ingresos, gastos, rentabilidad, liquidez
+        y endeudamiento para apoyar la toma de decisiones.
+    </p>
+
+</div>
+
+                </section>
+
+
+                <!-- ============================== -->
+                <!-- SECCIÓN PROYECTOS -->
+                <!-- ============================== -->
+
+                <section
+                    id="projects"
+                    class="tab-content">
+
+
+                    <h3>Mis proyectos</h3>
+
+
+                    <p class="projects-intro">
+                        Aquí iremos agregando los proyectos que
+                        desarrollemos.
+                    </p>
+
+
+                    <!-- ====================== -->
+                    <!-- PROYECTO 1 -->
+                    <!-- ====================== -->
+
+                    <article class="project">
+
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-chart-column"></i>
+
+                        </div>
+
+
+                        <div class="project-info">
+
+
+                            <h4>Proyecto de Data Science</h4>
+
+
+                            <p>
+                                Análisis y visualización de datos para
+                                identificar tendencias y facilitar la
+                                toma de decisiones financieras.
+                            </p>
+
+
+                            <a href="#" target="_blank">
+
+                                Ver proyecto
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                    <!-- ====================== -->
+                    <!-- PROYECTO 2 -->
+                    <!-- ====================== -->
+
+                    <article class="project">
+
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-building"></i>
+
+                        </div>
+
+
+                        <div class="project-info">
+
+
+                            <h4>Análisis Financiero de Empresas</h4>
+
+
+                            <p>
+                                Análisis de estados financieros, rentabilidad,
+                                liquidez y nivel de endeudamiento de empresas
+                                para evaluar su situación financiera y apoyar
+                                la toma de decisiones.
+                            </p>
+
+
+                            <a href="#" target="_blank">
+
+                                Ver proyecto
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                </section>
+
+
+                <!-- ============================== -->
+                <!-- SECCIÓN CONTACTO -->
+                <!-- ============================== -->
+
+                <section
+                    id="contact"
+                    class="tab-content">
+
+
+                    <h3>Contacto</h3>
+
+
+                    <p>
+                        Si deseas conocer más sobre mis proyectos,
+                        experiencia o conocimientos en finanzas,
+                        puedes contactarme a través de mis redes sociales.
+                    </p>
+
+
+                    <div class="contact-info">
+
+
+                        <p>
+
+                            <i class="fa-solid fa-user"></i>
+
+                            Diego Guerrero
+
+                        </p>
+
+
+                        <p>
+
+                            <i class="fa-solid fa-chart-line"></i>
+
+                            Especialista en Finanzas
+
+                        </p>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
 
 </html>
